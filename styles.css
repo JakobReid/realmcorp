@@ -1,0 +1,75 @@
+@media screen and (max-width: 992px) {
+    body {
+        background-size: contain;
+    }
+
+    footer {
+        display: block !important;
+    }
+
+    .page-title {
+        margin-top: -10rem;
+        font-size: 45px !important;
+    }
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('./assets/images/360_F_281897358_3rj9ZBSZHo5s0L1ug7uuIHadSxh9Cc75.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Karla', sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #051937;
+    background-repeat: no-repeat;
+}
+
+header .navbar-collapse {
+    flex-basis: 0;
+    flex-grow: 0;
+}
+
+footer {
+    color: white;
+    background-color: #6b6b6b;
+    padding-top: 1rem;
+    display: none;
+}
+
+.page-title {
+    color: #ffffff;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.page-description {
+    color: #ffffff;
+    font-size: 18px;
+    max-width: 40rem;
+}
+
+.navbar {
+    justify-content: space-between !important;
+    padding: 1rem 0 1rem 0 !important;
+}
+
+.navbar-brand img {
+    max-width: 12.5rem;
+}
+
+.navbar-text {
+    color: #ffffff !important;
+    padding: 0 2rem;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.navbar-text:not(:last-of-type) {
+    border-right: 1px solid #ffffff;
+}
