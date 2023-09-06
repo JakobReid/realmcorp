@@ -88,6 +88,10 @@ footer {
     max-width: 12.5rem;
 }
 
+.navbar-container {
+    height: 100%;
+}
+
 .navbar-text {
     color: #ffffff !important;
     padding: 0 2rem;
