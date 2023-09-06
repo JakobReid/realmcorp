@@ -101,7 +101,7 @@ footer {
 }
 
 .content-header {
-    color: white;
+    color: white !important;
     text-decoration: none;
 }
 
