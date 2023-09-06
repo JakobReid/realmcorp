@@ -15,7 +15,7 @@
         font-size: 25px !important;
     }
 
-    #about {
+    .collapse-content {
         margin-left: 0 !important;
     }
 }
@@ -104,6 +104,6 @@ footer {
     text-decoration: none;
 }
 
-#about {
+.collapse-content {
     margin-left: 3.5rem;
 }
