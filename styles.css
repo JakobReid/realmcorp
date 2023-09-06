@@ -35,7 +35,6 @@ body {
 header {
     background-color: #051937;
     background-repeat: no-repeat;
-    height: 7.5rem;
     position: fixed;
     top: 0;
     width: 100%;
@@ -86,10 +85,6 @@ footer {
 
 .navbar-brand img {
     max-width: 12.5rem;
-}
-
-.navbar-container {
-    height: 100%;
 }
 
 .navbar-text {
