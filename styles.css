@@ -1,6 +1,6 @@
 @media screen and (max-width: 992px) {
-    body {
-        background-size: contain;
+    main {
+        top: 10rem !important;
     }
 
     footer {
@@ -14,23 +14,31 @@
     .page-subtitle {
         font-size: 25px !important;
     }
+
+    #about {
+        margin-left: 0 !important;
+    }
 }
 
 body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('./assets/images/360_F_281897358_3rj9ZBSZHo5s0L1ug7uuIHadSxh9Cc75.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('./assets/images/buildings.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     color: #ffffff !important;
     display: flex;
     flex-direction: column;
-    font-family: 'Karla', sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
     min-height: 100vh;
 }
 
 header {
     background-color: #051937;
     background-repeat: no-repeat;
+    height: 7.5rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 header .navbar-collapse {
@@ -38,10 +46,23 @@ header .navbar-collapse {
     flex-grow: 0;
 }
 
+main {
+    position: absolute;
+    top: 20rem; /* Height of the header */
+    bottom: 4.75rem; /* Height of the footer */
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+}
+
 footer {
     background-color: #6b6b6b;
-    padding-top: 1rem;
+    bottom: 0;
     display: none;
+    height: 3.75rem;
+    padding-top: 1rem;
+    position: fixed;
+    width: 100%;
 }
 
 .page-title {
@@ -77,4 +98,13 @@ footer {
 
 .navbar-text:not(:last-of-type) {
     border-right: 1px solid #ffffff;
+}
+
+.content-header {
+    color: white;
+    text-decoration: none;
+}
+
+#about {
+    margin-left: 3.5rem;
 }

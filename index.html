@@ -10,14 +10,14 @@
     <link href="styles.css" rel="stylesheet">
 
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/e0631bf475.js" crossorigin="anonymous"></script>
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -25,7 +25,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
                 <a class="navbar-brand" href="#">
-                    <img src="assets/images/logo/White logo - no background.svg" alt="logo">
+                    <img src="assets/images/logo/realm_white.png" alt="Realm Logo">
                 </a>
                 <div class="collapse navbar-collapse">
                     <span class="navbar-text">+61 477 004 481</span>
@@ -37,23 +37,34 @@
 
 
 
-    <main class="my-auto">
+    <main class="">
         <div class="container">
-            <h1 class="page-title">Coming Soon</h1>
-            <p class="page-description">
-                We are thrilled to announce the launch of our brand-new website, your gateway to a world of utility billing excellence.
-                At Realm, we are passionate about delivering the highest quality utility billing services to strata communities, and we
-                are excited to introduce ourselves to you...soon
-            </p>
+            <div class="row">
+                <h1 class="page-title">Coming Soon</h1>
 
-            <h2 class="page-subtitle">Who Are We?</h2>
-            <p class="page-description">
-                Realm is your dedicated partner for utility billing services. With a wealth of experience in embedded network billing
-                and operations, our team is here to bring efficiency, transparency, and accuracy to utility billing in strata
-                communities.
-            </p>
+                <p class="page-description">
+                    We are thrilled to announce the launch of our brand-new website, your gateway to a world of utility billing excellence.
+                    At Realm, we are passionate about delivering the highest quality utility billing services to strata communities, and we
+                    are excited to introduce ourselves to you...soon
+                </p>
+            </div>
 
 
+            <div class="row">
+                <h2>
+                    <a class="content-header" href="#about" data-bs-toggle="collapse">
+                        <i class="fas fa-fw fa-caret-up d-none"></i>
+                        <i class="fas fa-fw fa-caret-down"></i>
+                        Who Are We?
+                    </a>
+                </h2>
+
+                <p id="about" class="page-description collapse">
+                    Realm is your dedicated partner for utility billing services. With a wealth of experience in embedded network billing
+                    and operations, our team is here to bring efficiency, transparency, and accuracy to utility billing in strata
+                    communities.
+                </p>
+            </div>
         </div>
     </main>
 
@@ -64,6 +75,25 @@
             <p><i class="fas fa-fw fa-envelope"></i> info@realmcorp.com.au</p>
         </div>
     </footer>
-</body>
 
+
+
+    <script type="text/javascript">
+        $(function () {
+            $('.content-header').on('click', function () {
+                let caretDown = $(this).find('i.fa-caret-down');
+                let caretUp = $(this).find('i.fa-caret-up');
+
+                if (caretUp.hasClass('d-none')) {
+                    caretUp.removeClass('d-none');
+                    caretDown.addClass('d-none');
+                }
+                else {
+                    caretDown.removeClass('d-none');
+                    caretUp.addClass('d-none');
+                }
+            });
+        });
+    </script>
+</body>
 </html>
