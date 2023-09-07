@@ -148,6 +148,10 @@ label {
     color: #ffffff;
 }
 
+textarea.form-control {
+    border-width: 1px;
+}
+
 #contact-content button[type="submit"] {
     border-radius: 0;
     margin-top: 2rem;
@@ -164,4 +168,9 @@ label {
     background-color: #ffffff;
     border-color: #051937;
     color: #051937;
+}
+
+#contact-content #message {
+    margin-top: 1rem;
+    min-height: 10rem;
 }

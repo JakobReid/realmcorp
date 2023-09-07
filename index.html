@@ -85,28 +85,37 @@
                 </h2>
 
 
-                <form class="collapse-content collapse" id="contact-content">
+                <form class="collapse-content collapse" id="contact-content" action="https://formspree.io/f/xyyqjldv"
+                    method="">
                     <div class="row form-row">
                         <div class="col-sm">
                             <label class="d-none" for="name">Name</label>
-                            <input class="form-control" type="text" name="name" id="name" placeholder="Name">
+                            <input class="form-control" type="text" name="name" id="name" placeholder="Name*" required>
                         </div>
 
                         <div class="col-sm">
-                            <label class="d-none" for="phone">Phone Number</label>
-                            <input class="form-control" type="text" name="phone" id="phone" placeholder="Phone Number">
+                            <label class="d-none" for="email">Email Address</label>
+                            <input class="form-control" type="email" name="email" id="email"
+                                placeholder="Email Address*" required>
                         </div>
                     </div>
 
                     <div class="row form-row">
                         <div class="col-sm">
-                            <label class="d-none" for="email">Email Address</label>
-                            <input class="form-control" type="email" name="email" id="email" placeholder="Email Address">
+                            <label class="d-none" for="phone">Phone Number</label>
+                            <input class="form-control" type="tel" name="phone" id="phone" placeholder="Phone Number">
                         </div>
 
                         <div class="col-sm">
                             <label class="d-none" for="company-name">Company Name</label>
-                            <input class="form-control" type="text" name="company_name" id="company-name" placeholder="Company Name">
+                            <input class="form-control" type="text" name="company_name" id="company-name"
+                                placeholder="Company Name">
+                        </div>
+                    </div>
+
+                    <div class="row form-row">
+                        <div class="col-sm">
+                            <textarea class="form-control" type="text" name="message" id="message" placeholder="What can we help you with?"></textarea>
                         </div>
                     </div>
 
