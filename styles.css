@@ -64,6 +64,14 @@ footer {
     width: 100%;
 }
 
+label {
+    font-weight: bold;
+}
+
+.collapse-section {
+    margin-top: 0.5rem !important;
+}
+
 .page-title {
     font-size: 80px;
     font-weight: bold;
@@ -106,4 +114,15 @@ footer {
 
 .collapse-content {
     margin-left: 3.5rem;
+}
+
+.form-row {
+    margin-top: 0.5rem !important;
+}
+
+.form-control {
+    background: none !important;
+    border-radius: 0 !important;
+    border-width: 0 0 1px 0 !important;
+    color: #ffffff !important;
 }
